@@ -2,12 +2,13 @@
 
 function conectarBD() {
     $host = "localhost"; 
+    $port = "5433"; 
     $dbname = "dbphp";
     $user = "postgres";
     $password = "16022004";
 
     try {
-        $db = new PDO("pgsql:host=$host;dbname=$dbname", $user, $password);
+        $db = new PDO("pgsql:host=$host;port=$port;dbname=$dbname", $user, $password);
         echo "Se conectó de manera exitosa";
     } catch (PDOException $e) {
         echo "No se pudo conectar a la base de datos: " . $e->getMessage();
