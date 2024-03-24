@@ -17,6 +17,5 @@ function conectarBD() {
 }
 
 
-$db = conectarBD();
 
 
