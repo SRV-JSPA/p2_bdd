@@ -319,4 +319,21 @@ img {
     background-color: gray;
     cursor: pointer;
 }
+.alerta {
+    padding: .5rem;
+    text-align: center;
+    color: #ffffff; 
+    font-weight: bold; 
+    text-transform: uppercase;
+    margin: 1rem 0;
+}
+
+.alerta.error {
+    background-color: #ff0000; 
+}
+
+.alerta.exito {
+    background-color: #00ff00; 
+}
+
 
